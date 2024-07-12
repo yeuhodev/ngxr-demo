@@ -6,7 +6,7 @@
     "angular-17-crud": {
       "projectType": "application",
       "schematics": {
-        "@schematics/angular:component": {
+        "@/angular:component": {
           "standalone": false
         },
         "@schematics/angular:directive": {
@@ -14,6 +14,9 @@
         },
         "@schematics/angular:pipe": {
           "standalone": false
+        },
+        "@schematics/angular:component": {
+          "style": "scss"
         }
       },
       "root": "",
@@ -36,7 +39,7 @@
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.slim.min.js",
@@ -99,12 +102,15 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "71911e09-173f-438e-99dc-3590f7ab0451"
   }
 }
