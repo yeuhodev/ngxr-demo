@@ -1,18 +1,18 @@
 # Angular 17 example project: CRUD with Rest API
 
-Build an Angular 17 CRUD example App to consume Rest APIs, display, modify & search data.
+Build an Angular 17 Emptye App to consume Rest APIs, display, modify & search data.
 
 Tutorial Application in that:
 - Each Tutorial has id, title, description, published status.
 - We can create, retrieve, update, delete Tutorials.
 - There is a Search bar for finding Tutorials by title.
 
-![angular-17-crud-example](angular-17-crud-example.png)
+![angular-empty-example](angular-empty-example.png)
 
 Run `ng serve --port 8081` for a dev server. Navigate to `http://localhost:8081/`. The app will automatically reload if you change any of the source files.
 
 For instruction, please visit:
-> [Angular 17 CRUD example with Rest API](https://www.bezkoder.com/angular-17-crud-example/)
+> [Angular 17 Emptye with Rest API](https://www.bezkoder.com/angular-empty-example/)
 
 More Practice:
 > [Angular 17 Pagination example](https://www.bezkoder.com/angular-17-pagination-ngx/)
@@ -35,7 +35,7 @@ Fullstack with Node:
 
 Fullstack with Spring Boot:
 
-> [Angular 17 + Spring Boot example](https://www.bezkoder.com/spring-boot-angular-17-crud/)
+> [Angular 17 + Spring Boot example](https://www.bezkoder.com/spring-boot-angular-empty/)
 
 > [Angular 17 + Spring Boot + MySQL example](https://www.bezkoder.com/spring-boot-angular-17-mysql/)
 
@@ -62,7 +62,7 @@ Security:
 Serverless with Firebase:
 > [Angular 17 Firebase CRUD with Realtime DataBase](https://www.bezkoder.com/angular-17-firebase-crud/)
 
-> [Angular 17 Firestore CRUD example](https://www.bezkoder.com/angular-17-firestore-crud/)
+> [Angular 17 Firestore Emptye](https://www.bezkoder.com/angular-17-firestore-crud/)
 
 > [Angular 17 Firebase Storage: File Upload/Display/Delete example](https://www.bezkoder.com/angular-17-firebase-storage/)
 

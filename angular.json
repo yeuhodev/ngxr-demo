@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-17-crud": {
+    "angular-empty": {
       "projectType": "application",
       "schematics": {
         "@/angular:component": {
@@ -26,7 +26,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/angular-17-crud",
+            "outputPath": "dist/angular-empty",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -75,10 +75,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "angular-17-crud:build:production"
+              "buildTarget": "angular-empty:build:production"
             },
             "development": {
-              "buildTarget": "angular-17-crud:build:development"
+              "buildTarget": "angular-empty:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -86,7 +86,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "angular-17-crud:build"
+            "buildTarget": "angular-empty:build"
           }
         },
         "test": {
