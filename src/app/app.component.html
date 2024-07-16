@@ -1,17 +1,11 @@
-<div>
-  <nav class="navbar navbar-expand navbar-dark bg-dark">
-    <a href="#" class="navbar-brand">bezKoder</a>
-    <div class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a routerLink="feature1" class="nav-link">Feature 1</a>
-      </li>
-      <li class="nav-item">
-        <a routerLink="feature2" class="nav-link">Feature 2</a>
-      </li>
-    </div>
+<div class="h-full flex flex-col">
+  <nav>
+    <app-header></app-header>
   </nav>
-
-  <div class="container mt-3">
+  <div class="container mt-3 ">
     <router-outlet></router-outlet>
+  </div>
+  <div class="mt-auto">
+    <app-footer></app-footer>
   </div>
 </div>

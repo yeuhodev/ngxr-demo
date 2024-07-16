@@ -1,3 +1,14 @@
-<p>
-  footer works!
-</p>
+<header class="header border-b border-l-neutral-400">
+  <mat-toolbar>
+    <span class="logo">Pompeo</span>
+    <span class="spacer"></span>
+    <a mat-button routerLink="home" (click)="goToHome()">HOME</a>
+    <a mat-button routerLink="/shop">SHOP</a>
+    <a mat-button routerLink="/feature2">ABOUT</a>
+    <a mat-button routerLink="/contact">CONTACT</a>
+    <span class="spacer"></span>
+    <button mat-icon-button>
+      <mat-icon>shopping_cart</mat-icon>
+    </button>
+  </mat-toolbar>
+</header>

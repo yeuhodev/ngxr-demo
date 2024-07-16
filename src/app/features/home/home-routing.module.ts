@@ -1,17 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { Feature2Component } from './components/feature2/feature2.component';
+import { HomeComponent } from './components';
 
 const routes: Routes = [
   {
     path: '',
-    component: Feature2Component
+    component: HomeComponent
   },
-  // Các route khác của feature1
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class Feature2RoutingModule { }
+export class HomeRoutingModule { }
