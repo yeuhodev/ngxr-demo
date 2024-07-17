@@ -9,12 +9,11 @@ import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { FooterComponent, HeaderComponent } from './shared/components';
+import { productReducer } from './shared/store/reducers';
+import { ProductsEffects } from './shared/store/effects';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -22,11 +21,11 @@ import { FooterComponent, HeaderComponent } from './shared/components';
     HttpClientModule,
     HeaderComponent,
     FooterComponent,
-    StoreModule.forRoot({}, {}),
-    EffectsModule.forRoot([]),
-    StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: !isDevMode() })
+    StoreModule.forRoot({ products: productReducer }),
+    EffectsModule.forRoot([ProductsEffects]),
+    StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: !isDevMode() }),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

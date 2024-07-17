@@ -1,20 +1,19 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { getProducts } from '../mock';
-import { Product } from '../../models';
+import { getProductById, getProducts } from '../mock';
+import { ProductModel } from '../../models';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ProductService {
+  constructor() {}
 
-  constructor() { }
-
-  getProducts(): Observable<Product[]> {
+  getProducts(): Observable<ProductModel[]> {
     return of(getProducts());
   }
 
-  getProductById(id: number): Observable<Product> {
+  getProductById(id: number): Observable<ProductModel> {
     const product = getProductById(id);
     return of(product);
   }

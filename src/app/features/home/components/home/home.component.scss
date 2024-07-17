@@ -1,6 +1,7 @@
 .home{
     .banner{
-        background-image: linear-gradient(to right, #f8f6f4 30%, transparent),url('../../../../../assets/images/banner.jpg');
+        background-image: linear-gradient(to right, #f8f6f4 0%, transparent),url('/assets/images/home-banner.png');
+        min-height: 567px;
         
         &__content{
             width: 600px;
@@ -9,5 +10,15 @@
         &__title{
             font-size: 44px;
         }
+       
+    }
+
+    .different-font {
+        color: var(--firebrick);
+        font-family: Playfair Display, sans-serif;
+        font-size: 68px;
+        font-weight: 400;
+        line-height: 68px;
+        position: relative;
     }
 }

@@ -1,3 +1,23 @@
-<p>
-  shop works!
-</p>
+<main class="shop">
+  <div>
+    <app-banner [info]="bannerInfo"></app-banner>
+  </div>
+  <div class="mt-10 flex flex-col items-center">
+    <div>OUR ONLINE STORE</div>
+    <h1>Ceramic Collection</h1>
+  </div>
+  <div class="products grid grid-cols-3 gap-4 mx-auto">
+    <ng-container *ngIf="products$ | async as products; else loading">
+      <div *ngFor="let product of products" class="product-item">
+        <img [src]="product.imageUrl" [alt]="product.name" />
+        <h2>{{ product.name }}</h2>
+        <p>{{ product.description }}</p>
+        <p>{{ product.price | currency: product.currency }}</p>
+      </div>
+    </ng-container>
+  </div>
+</main>
+
+<ng-template #loading>
+  <p>Loading products...</p>
+</ng-template>

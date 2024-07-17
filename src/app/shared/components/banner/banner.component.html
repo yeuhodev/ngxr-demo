@@ -1,0 +1,15 @@
+<div
+  class="banner h-96 px-32 flex"
+  [style.backgroundImage]="
+    'linear-gradient(to right, #f8f6f4 30%, transparent), url(' +
+    info.backgroundUrl +
+    ')'
+  "
+>
+  <div class="banner__content my-auto flex flex-col">
+    <h2 class="banner__title">{{ info.title }}</h2>
+    <span class="text-gray-400 font-medium">
+      {{ info.description }}
+    </span>
+  </div>
+</div>
