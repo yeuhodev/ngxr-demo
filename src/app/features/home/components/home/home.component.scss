@@ -1,0 +1,13 @@
+.home{
+    .banner{
+        background-image: linear-gradient(to right, #f8f6f4 30%, transparent),url('../../../../../assets/images/banner.jpg');
+        
+        &__content{
+            width: 600px;
+        }
+
+        &__title{
+            font-size: 44px;
+        }
+    }
+}

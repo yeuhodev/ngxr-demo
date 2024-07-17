@@ -3,7 +3,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { Router } from '@angular/router';
+import {  RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -12,17 +12,13 @@ import { Router } from '@angular/router';
     CommonModule,
     MatToolbarModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    RouterModule
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HeaderComponent { 
-  constructor(private route: Router){
 
-  }
-  goToHome(){
-    this.route.navigateByUrl('/home')    
-  }
 }
